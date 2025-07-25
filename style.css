@@ -399,27 +399,48 @@ body {
   width: 24px;
 }
 .cart {
-  display: none; /* Hidden by default on larger screens */
+  display: none; 
 }
 
 .trusted-logo {
-  display: block; /* Visible by default */
+  display: block; 
 }
 
 
 /* Responsive */
 @media (max-width: 768px) {
   .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
     position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  }
+
+  .menu ul.desktop-menu {
+    display: none; /* Hide Home, Shop, About us on mobile */
   }
 
   .menu ul {
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+  }
+
+  .cart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    padding: 6px 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .cart span {
+    display: inline; /* Ensure Cart ($56) text is shown */
   }
 
   .banner {
@@ -446,76 +467,45 @@ body {
   }
 
   .lover {
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  padding: 1.5rem 1rem;
-}
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
 
   .lover-img {
-  max-width: 100%;
-  margin-bottom: 1rem;
-}
+    max-width: 100%;
+  }
 
-.lover-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-}
+  .lover-img img {
+    width: 100%;
+    height: auto;
+  }
 
-  .lover-content1 h2 {
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
-}
+  .lover-content {
+    padding: 0;
+  }
 
-.lover-content ul {
-  padding: 0;
-  list-style-type: none;
-  font-size: 1rem;
-  line-height: 1.6;
-}
-
-  .deals {
-    padding: 1rem;
+  .deals-content h1 {
+    font-size: 2rem;
   }
 
   .deal-grid {
-  flex-direction: column;
-  gap: 20px;
-}
+    flex-direction: column;
+  }
 
-.left-column, .right-column {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
+  .left-column,
+  .right-column {
+    width: 100%;
+  }
 
   .deal-box {
-  width: 100% !important;
-  height: 180px;
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.deal-text {
-  font-size: 1.2rem;
-  text-align: center;
-  color: white;
-  padding: 10px 15px;
-  border-radius: 6px;
-}
-
-  .join {
-    padding: 40px 10px;
+    width: 100% !important;
+    height: 200px;
   }
 
   .join h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   .join input[type="email"] {
@@ -543,16 +533,32 @@ body {
   .social-icons {
     justify-content: flex-start;
   }
-  .cart {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 10;
-  }
 
-.trusted-logo {
-  display: none; /* Hide trusted seller logo on mobile */
+  .trusted-logo {
+    display: none; /* Hide trusted seller logo on mobile */
+  }
 }
+
+.logo img {
+  max-height: 50px;
+  width: auto;
 }
+
+.desktop-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.cart {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.cart img {
+  width: 24px;
+  height: auto;
+}
+
 
 
