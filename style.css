@@ -405,6 +405,24 @@ body {
 .trusted-logo {
   display: block; 
 }
+.desktop-menu {
+  display: flex;
+  gap: 1rem;
+}
+
+.mobile-cart {
+  display: none;
+}
+
+/* Trusted logo */
+.trusted-logo {
+  width: 80px;
+  height: auto;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 2;
+}
 
 
 /* Responsive */
@@ -535,7 +553,7 @@ body {
   }
 
   .trusted-logo {
-    display: none; /* Hide trusted seller logo on mobile */
+    display: none; /* Hide logo in mobile */
   }
 }
 
@@ -545,9 +563,13 @@ body {
 }
 
 .desktop-menu {
-  display: flex;
-  gap: 20px;
-}
+    display: none; /* Hide menu items in mobile */
+  }
+  .mobile-cart {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
 
 .cart {
   display: flex;
