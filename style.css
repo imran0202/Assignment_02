@@ -242,6 +242,21 @@ body {
   width: 100%;
   border-radius: 8px;
 }
+.shop-link {
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.shop-link:hover {
+  background-color: #2045ac;
+}
+
+
 
 .join {
   background-image: url('assets/news-letter-bg.png'); /* Replace with your actual image path */
@@ -374,42 +389,94 @@ body {
 
 /* Responsive */
 @media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+
+  .menu ul {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
   .banner {
     flex-direction: column;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .banner-content {
+    max-width: 100%;
+  }
+
+  .banner-img img {
+    width: 100%;
+    height: auto;
+  }
+
+  .plants {
+    padding: 1rem;
+  }
+
+  .plant-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 
   .lover {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding: 1.5rem;
+  }
+
+  .lover-img {
+    max-width: 100%;
   }
 
   .lover-img img {
-    max-width: 100%;
-    margin-bottom: 20px;
+    width: 100%;
+    height: auto;
   }
 
   .lover-content {
     padding: 0;
   }
 
-  .lover-content ul {
-    padding-left: -1;
-    list-style-position: inside;
+  .deals {
+    padding: 1rem;
   }
 
-  .menu ul {
+  .deal-grid {
     flex-direction: column;
-    gap: 1rem;
   }
 
-  .plant-grid {
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  .left-column, .right-column {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
-}
-@media (max-width: 600px) {
+
+  .deal-box {
+    width: 100% !important;
+    height: 180px;
+    border-radius: 10px;
+  }
+
+  .deal-text {
+    font-size: 1.2rem;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .join {
+    padding: 40px 10px;
+  }
+
   .join h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   .join input[type="email"] {
@@ -419,5 +486,24 @@ body {
   .join button {
     width: 100%;
   }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-logo img {
+    width: 100px;
+  }
+
+  .social-icons {
+    justify-content: flex-start;
+  }
 }
+
 
