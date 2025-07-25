@@ -244,50 +244,123 @@ body {
 }
 
 .join {
-  background-image: url('assets/join-bg.png');
+  background-image: url('assets/news-letter-bg.png'); /* Replace with your actual image path */
   background-size: cover;
   background-position: center;
-  padding: 3rem;
+  padding: 80px 20px;
   text-align: center;
+  position: relative;
   color: white;
+}
+
+
+
+.join h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.join form {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .join input[type="email"] {
-  padding: 0.5rem;
-  width: 250px;
-  max-width: 90%;
-  margin-right: 0.5rem;
+  padding: 10px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  min-width: 250px;
 }
 
 .join button {
-  padding: 0.5rem 1rem;
-  background-color: #ff6600;
+  padding: 10px 20px;
+  background-color: #ff6f61;
   color: white;
   border: none;
+  border-radius: 5px;
+  font-size: 1rem;
   cursor: pointer;
 }
 
+
 .footer {
-  background-color: #f9f9f9;
-  padding: 2rem;
+  background-color: #f8f6f6;
+  color: #000000;
+  padding: 30px 20px 20px;
+  font-size: 1.2rem;
+  font-family: Arial, sans-serif;
 }
 
-.footer-cols {
+.footer-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-}
-
-.footer-cols div {
-  flex: 1;
-  margin: 1rem;
+  gap: 40px;
 }
 
 .footer-logo {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #ff6600;
+  max-width: 250px;
 }
+
+.footer-logo img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.footer-col {
+  margin-bottom: 10px;
+  font-size: 1 rem;
+  color: #ffb6b6;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 6px;
+}
+
+.footer-col ul li a {
+  color: #000000;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.social-icons img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.social-icons img:hover {
+  transform: scale(1.2);
+}
+
+
+
 
 .social-icons {
   margin-top: 1rem;
@@ -305,7 +378,25 @@ body {
     flex-direction: column;
   }
 
-  
+  .lover {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .lover-img img {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .lover-content {
+    padding: 0;
+  }
+
+  .lover-content ul {
+    padding-left: -1;
+    list-style-position: inside;
+  }
 
   .menu ul {
     flex-direction: column;
@@ -316,3 +407,17 @@ body {
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 }
+@media (max-width: 600px) {
+  .join h2 {
+    font-size: 1.5rem;
+  }
+
+  .join input[type="email"] {
+    width: 100%;
+  }
+
+  .join button {
+    width: 100%;
+  }
+}
+
