@@ -271,7 +271,7 @@ body {
 
 
 .join {
-  background-image: url('assets/news-letter-bg.png'); /* Replace with your actual image path */
+  background-image: url('assets/news-letter-bg.png'); 
   background-size: cover;
   background-position: center;
   padding: 80px 20px;
@@ -414,17 +414,6 @@ body {
   display: none;
 }
 
-/* Trusted logo */
-.trusted-logo {
-  width: 80px;
-  height: auto;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  z-index: 2;
-}
-
-
 /* Responsive */
 @media (max-width: 768px) {
   .navbar {
@@ -435,7 +424,7 @@ body {
   }
 
   .menu ul.desktop-menu {
-    display: none; /* Hide Home, Shop, About us on mobile */
+    display: none; 
   }
 
   .menu ul {
@@ -458,7 +447,7 @@ body {
   }
 
   .cart span {
-    display: inline; /* Ensure Cart ($56) text is shown */
+    display: inline; 
   }
 
   .banner {
@@ -553,7 +542,7 @@ body {
   }
 
   .trusted-logo {
-    display: none; /* Hide logo in mobile */
+    display: none; 
   }
 }
 
@@ -563,7 +552,7 @@ body {
 }
 
 .desktop-menu {
-    display: none; /* Hide menu items in mobile */
+    display: none; 
   }
   .mobile-cart {
     display: flex;
