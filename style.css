@@ -386,6 +386,14 @@ body {
 .social-icons img {
   width: 24px;
 }
+.cart {
+  display: none; /* Hidden by default on larger screens */
+}
+
+.trusted-logo {
+  display: block; /* Visible by default */
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
@@ -523,6 +531,16 @@ body {
   .social-icons {
     justify-content: flex-start;
   }
+  .cart {
+  display: block; /* Show cart only in mobile */
+  position: absolute;
+  top: 15px;
+  right: 20px;
+}
+
+.trusted-logo {
+  display: none; /* Hide trusted seller logo on mobile */
+}
 }
 
 
